@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
-import store from '../../../redux/store';
+import store from '../../../shared/store';
 import './UserForm.scss';
 
 class UserForm extends Component {

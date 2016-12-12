@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import store from '../../../redux/store';
+import store from '../../../shared/store';
 import './AddUser.scss';
 
 class AddUser extends Component {
