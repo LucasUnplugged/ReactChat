@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import Header from '../Header/Header';
 import UserPanel from '../UserPanel/UserPanel';
@@ -17,6 +17,10 @@ class App extends Component {
         );
     }
 }
+
+App.propTypes = {
+    users: PropTypes.array
+};
 
 const mapStateToProps = function(store) {
     return {

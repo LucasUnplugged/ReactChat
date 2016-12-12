@@ -59,7 +59,8 @@ class UserForm extends Component {
 }
 
 UserForm.propTypes = {
-    id: PropTypes.string.isRequired
+    id: PropTypes.string.isRequired,
+    user: PropTypes.object.isRequired
 };
 
 const mapStateToProps = function(store, props) {

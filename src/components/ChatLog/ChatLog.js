@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import './ChatLog.scss';
 import moment from 'moment';
@@ -54,6 +54,11 @@ class ChatLog extends Component {
         );
     }
 }
+
+ChatLog.propTypes = {
+    messages: PropTypes.array.isRequired,
+    users: PropTypes.array.isRequired
+};
 
 const mapStateToProps = function(store) {
     return {

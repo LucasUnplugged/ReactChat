@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import store from '../../../shared/store';
 import './AddUser.scss';
@@ -46,6 +46,10 @@ class AddUser extends Component {
         );
     }
 }
+
+AddUser.propTypes = {
+    username: PropTypes.string.isRequired
+};
 
 const mapStateToProps = function(store) {
     return {
