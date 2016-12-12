@@ -6,7 +6,7 @@
     padding: 45px 15px 15px 15px;
     margin: 0 0 20px;
     background: $rc-color-box;
-    border: 1px solid $rc-color-text-medium;
+    border-bottom: 3px solid darken($rc-color-box, 5%);
     border-radius: $rc-radius;
 
     header {
@@ -16,13 +16,13 @@
         left: 0;
         width: 100%;
         padding: 2px 15px;
-        background: $rc-color-text-medium;
+        background: $rc-color-box-medium;
         border-radius: $rc-radius $rc-radius 0 0;
 
         h1,
         a.control {
             line-height: 30px;
-            color: $rc-color-white;
+            color: $rc-color-text;
         }
 
         h1 {
@@ -37,6 +37,7 @@
             padding: 0 15px 0 16px;
             font-size: 12px;
             border-radius: 0 $rc-radius 0 0;
+            transition: background 150ms ease;
 
             &:after {
                 display: none;
@@ -44,7 +45,8 @@
 
             &:hover,
             &:focus {
-                background: $rc-color-main;
+                color: $rc-color-white;
+                background: $rc-color-alt;
             }
         }
 

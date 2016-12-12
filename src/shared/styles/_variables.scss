@@ -8,7 +8,8 @@ $rc-color-alt-dark: #226c47;
 $rc-color-white: #fff;
 $rc-color-black: #000;
 $rc-color-box: #f3f3f3; // Light grey
-$rc-color-box-dark: darken($rc-color-box, 20%); // Grey
+$rc-color-box-medium: darken($rc-color-box, 10%);
+$rc-color-box-dark: darken($rc-color-box, 20%);
 $rc-color-text: #444; // Dark grey
 $rc-color-text-light: $rc-color-white;
 $rc-color-text-medium: #767676; // Medium grey
