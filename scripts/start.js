@@ -21,6 +21,7 @@ const chalk = require('chalk');
 const openBrowser = require('react-dev-utils/openBrowser');
 
 var savedMessages = false;
+var wipeMessages;
 
 io.on('connection', (socket) => {
   console.log('User connected');
@@ -41,6 +42,13 @@ io.on('connection', (socket) => {
           io.emit('stateChange', message);
           if (message.state.messages) {
               savedMessages = message;
+
+              // Only keep messages saved for 1 hour, unless users
+              // are actively adding new messages.
+              clearTimeout(wipeMessages);
+              wipeMessages = setTimeout( function() {
+                  savedMessages = false;
+              }, 3600000 ); // 1 hour
           }
       }
   });
