@@ -1,0 +1,17 @@
+@import "neat";
+@import "neat-helpers";
+
+// NEAT SETUP /////////////////////////////////////////////
+// Neat Framework Overrides
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 960px;
+
+// Breakpoints
+$rc-desktop: new-breakpoint($default-feature 960px);
+$rc-tablet: new-breakpoint($default-feature 640px 6);
+$rc-mobile: new-breakpoint($default-feature 480px 2);
+
+// Misc App Definitions
+$rc-pad: $gutter;

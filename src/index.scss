@@ -1,0 +1,114 @@
+@import "bourbon";
+@import "bitters";
+@import "shared/styles/variables";
+@import "shared/styles/fonts";
+
+
+// APP BASE ///////////////////////////////////////////////
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+p,
+li,
+a,
+small,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    color: $rc-color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.1em;
+}
+
+h1,
+h2,
+h3,
+a,
+.logo {
+    color: $rc-color-main;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        background:$rc-color-box;
+        transition: background 150ms ease;
+        z-index: -1;
+    }
+
+    &:hover,
+    &:focus {
+        color: $rc-color-text;
+
+        &:after {
+            height: 100%;;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background: $rc-color-main;
+
+    &:hover,
+    &:focus {
+        background: $rc-color-alt;
+    }
+}
+
+
+// FORMS //
+form {
+    .button-input {
+        display: block;
+        position: relative;
+
+        input {
+            display: block;
+            max-width: calc(100% - 90px);
+            margin-bottom: 0;
+            border-radius: $rc-radius 0 0 $rc-radius;
+            border-right: 0;
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 90px;
+            height: 36px;
+            line-height: 36px;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-radius: 0 $rc-radius $rc-radius 0;
+        }
+    }
+}

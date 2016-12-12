@@ -1,0 +1,24 @@
+// COLOURS //
+$rc-color-main: #bb3a6a; // Fuchsia
+$rc-color-main-medium: #8e284e;
+$rc-color-main-dark: #752141;
+$rc-color-alt: #33b272; // Green
+$rc-color-alt-light: #64e4a4;
+$rc-color-alt-dark: #226c47;
+$rc-color-white: #fff;
+$rc-color-black: #000;
+$rc-color-box: #f3f3f3; // Light grey
+$rc-color-box-dark: darken($rc-color-box, 20%); // Grey
+$rc-color-text: #444; // Dark grey
+$rc-color-text-light: $rc-color-white;
+$rc-color-text-medium: #767676; // Medium grey
+$rc-color-link: $rc-color-main;
+$rc-color-link-light: $rc-color-alt-light;
+$rc-color-link-dark: $rc-color-main-medium;
+$rc-color-success: #cdd255; // Green
+$rc-color-alert: #ee2040; // Red
+
+// MISC //
+$rc-radius: 3px;
+$rc-shadow: 0;
+$rc-box-pad: 35px;

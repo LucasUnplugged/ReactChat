@@ -1,0 +1,50 @@
+@import "../../shared/styles/variables";
+@import "../../shared/styles/grid";
+
+.ChatLog {
+    display: block;
+    position: relative;
+    min-height: 400px;
+    height: calc(100vh - 166px);
+    padding: 15px;
+    background: $rc-color-white;
+    border: 1px solid $rc-color-box-dark;
+    border-radius: $rc-radius;
+    overflow: auto;
+
+    @include span-columns(12);
+
+    @include media($rc-mobile) {
+        @include span-columns(2);
+    }
+    @include media($rc-tablet) {
+        @include span-columns(3);
+    }
+    @include media($rc-desktop) {
+        @include span-columns(7);
+    }
+
+    ul.log {
+        li {
+            margin: 0 0 8px;
+            font-weight: 400;
+
+            .meta {
+                display: block;
+                color: $rc-color-text-medium;
+                font-size: 85%;
+                font-weight: 200;
+            }
+
+            .user {
+                display: inline-block;
+                margin-right: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .typing-indicator {
+        color: $rc-color-main;
+    }
+}

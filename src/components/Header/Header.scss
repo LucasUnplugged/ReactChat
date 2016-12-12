@@ -1,0 +1,51 @@
+@import "../../shared/styles/variables";
+
+.Header {
+    padding: 20px 0;
+
+    .logo {
+        display: inline-block;
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        strong {
+            font-weight: 900;
+        }
+    }
+
+    .badge,
+    a.control {
+        position: relative;
+    }
+
+    .badge {
+        display: inline-block;
+        top: -7px;
+        padding: 4px 15px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $rc-color-text;
+        background: $rc-color-box;
+        border-radius: 80px;
+
+        [class^="rc-icon-"]:before,
+        [class*=" rc-icon-"]:before {
+            margin-left: 2px;
+        }
+    }
+
+    a.control {
+        display: inline-block;
+        float: right;
+        top: 13px;
+    }
+
+    > * {
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

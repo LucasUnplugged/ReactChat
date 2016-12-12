@@ -1,0 +1,15 @@
+@import "../../shared/styles/grid";
+
+.UserPanel {
+    @include span-columns(12);
+
+    @include media($rc-mobile) {
+        @include span-columns(2);
+    }
+    @include media($rc-tablet) {
+        @include span-columns(3);
+    }
+    @include media($rc-desktop) {
+        @include span-columns(5);
+    }
+}

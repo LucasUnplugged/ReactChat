@@ -1,0 +1,13 @@
+[class^="rc-icon-"]:before,
+[class*=" rc-icon-"]:before {
+    position: relative;
+}
+
+.rc-icon-user:before {
+    top: 1px;
+    font-size: 90%;
+}
+.rc-icon-popup:before {
+    top: 2px;
+    font-size: 90%;
+}
