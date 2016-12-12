@@ -113,7 +113,7 @@ if (!isProduction) {
     console.log();
 
     if (isInteractive) {
-      openBrowser(protocol + '://' + host + ':' + port + '/');
+      openBrowser(protocol + '://' + host + ':' + 8080 + '/');
     }
   });
 }
